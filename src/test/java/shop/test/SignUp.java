@@ -18,6 +18,7 @@ public class SignUp extends WebDriverSettings {
         homepage.move_to_cart();
         homepage.proceed_button.click();
         signinpage.proceed_button.click();
+        //loginpage.fiilform("snowing_93_man_@gmail.com","sdd93sas");
         loginpage.fiilform(homepage.test_data[0],homepage.test_data[1]);
         loginpage.submitform();
         loginpage.check_name();
@@ -46,6 +47,8 @@ public class SignUp extends WebDriverSettings {
     @Test
     public void signup_setting() {
         HomePage homepage = PageFactory.initElements(driver, HomePage.class);
+        SignInPage signinpage=PageFactory.initElements(driver,SignInPage.class);
+        LoginPage loginpage=PageFactory.initElements(driver,LoginPage.class);
 
         homepage.open();
         homepage.move_to_cart();
