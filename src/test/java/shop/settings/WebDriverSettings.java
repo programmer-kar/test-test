@@ -13,7 +13,7 @@ public class WebDriverSettings {
     @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\tools\\chromedriver\\chromedriver.exe");
-        driver = new ChromeDriver(); //берем Webdriver, инициализируем его в переменную драйвер и иницализируем его как хромедрайвер
+        driver = new ChromeDriver();
         wait=new WebDriverWait(driver,10);
     }
 

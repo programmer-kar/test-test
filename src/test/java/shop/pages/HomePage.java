@@ -12,12 +12,6 @@ public class HomePage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-
-    //Вызываем конструктор и говорит ему, что новая переменная драйвер будет экземпляром класса драйвеп
-
-    //@FindBy
-    //By.ByClassName("icon-ok")
-
     @FindBy(xpath = "//a[text()=\"Women\"]")
     private WebElement women;
 

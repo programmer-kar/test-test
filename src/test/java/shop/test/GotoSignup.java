@@ -10,7 +10,6 @@ import shop.settings.WebDriverSettings;
 import shop.pages.HomePage;
 
 public class GotoSignup extends WebDriverSettings{
-    //Actions action=new Actions(driver);
 
     @Test
     public void go_to_signup_from_home_page() {

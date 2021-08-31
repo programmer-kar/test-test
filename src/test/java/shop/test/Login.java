@@ -11,7 +11,7 @@ public class Login extends WebDriverSettings {
 
     @Test
         public void login(){
-        LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class); //инициализируем страницу для теста и потом уже с ней работаем. А именно вызываем методы
+        LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
         HomePage homePage =PageFactory.initElements(driver, HomePage.class);
         loginpage.open();
         loginpage.started();

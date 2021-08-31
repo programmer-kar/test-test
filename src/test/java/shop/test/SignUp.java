@@ -18,7 +18,6 @@ public class SignUp extends WebDriverSettings {
         homepage.move_to_cart();
         homepage.proceed_button.click();
         signinpage.proceed_button.click();
-        //loginpage.fiilform("snowing_93_man_@gmail.com","sdd93sas");
         loginpage.fiilform(homepage.test_data[0],homepage.test_data[1]);
         loginpage.submitform();
         loginpage.check_name();
@@ -34,21 +33,10 @@ public class SignUp extends WebDriverSettings {
         signinpage.first_bank.click();
         signinpage.confirm_order_button.click();
 
-        /*Поиск и проверка результата
-        driver.findElement(By.id("search_query_top")).sendKeys("Blouses", Keys.ENTER);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".product-container .product-name")));
-        WebElement element = driver.findElement(By.cssSelector(".product-container .product-name"));
-        String cart_title=element.getText();
-        System.out.println(cart_title);
-        Assert.assertEquals(cart_title,"Blouse");
-        */
-
     }
     @Test
     public void signup_setting() {
         HomePage homepage = PageFactory.initElements(driver, HomePage.class);
-        SignInPage signinpage=PageFactory.initElements(driver,SignInPage.class);
-        LoginPage loginpage=PageFactory.initElements(driver,LoginPage.class);
 
         homepage.open();
         homepage.move_to_cart();
