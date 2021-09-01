@@ -88,17 +88,6 @@ public class HomePage {
             "http://automationpractice.com/index.php?id_category=10&controller=category",
             "http://automationpractice.com/index.php?id_category=11&controller=category"
     };
-    public String[] test_data={
-            "snowing_93_man_@gmail.com",
-            "sdd93sas",
-            "John Andry",
-            "testcompany",
-            "adress1 test93",
-            "city93, Alabama 00000",
-            "234234234",
-            "2984892"
-    };
-
 
     public HomePage(WebDriver driver) {
         this.driver=driver;

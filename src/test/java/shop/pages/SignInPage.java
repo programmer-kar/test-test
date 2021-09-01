@@ -49,6 +49,17 @@ public class SignInPage extends WebDriverSettings {
     @FindBy(xpath = "//button[@class=\"button btn btn-default button-medium\"]")
     public WebElement confirm_order_button;
 
+    public String[] test_data={
+            "snowing_93_man_@gmail.com",
+            "sdd93sas",
+            "John Andry",
+            "testcompany",
+            "adress1 test93",
+            "city93, Alabama 00000",
+            "234234234",
+            "2984892"
+    };
+
     public SignInPage(WebDriver driver) {
         this.driver=driver;
         wait = new WebDriverWait(driver,10);
