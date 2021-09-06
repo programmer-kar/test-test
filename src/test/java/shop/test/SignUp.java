@@ -34,16 +34,4 @@ public class SignUp extends WebDriverSettings {
         signinpage.confirm_order_button.click();
 
     }
-    @Test
-    public void signup_setting() {
-        HomePage homepage = PageFactory.initElements(driver, HomePage.class);
-
-        homepage.open();
-        homepage.move_to_cart();
-        Assert.assertEquals(homepage.cart_title.getText(), "Faded Short Sleeve T-shirts");
-        homepage.proceed_button.click();
-
-    }
-
-
 }

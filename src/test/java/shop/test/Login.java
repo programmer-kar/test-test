@@ -2,7 +2,6 @@ package shop.test;
 
 import org.junit.Test;
 import org.openqa.selenium.support.PageFactory;
-import shop.pages.HomePage;
 import shop.pages.SignInPage;
 import shop.settings.WebDriverSettings;
 import shop.pages.LoginPage;

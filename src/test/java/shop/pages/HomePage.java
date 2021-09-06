@@ -120,6 +120,7 @@ public class HomePage {
 
     }
     public String evening_dresseslink(){
+
         return evening_dresses.getAttribute("href");
     }
 
@@ -135,7 +136,6 @@ public class HomePage {
     public String second_cart_price(){
         return second_cart_price.getText();
     }
-
     public String third_cart_price(){
         return third_cart_price.getText();
     }
@@ -159,17 +159,4 @@ public class HomePage {
         wait.until(ExpectedConditions.visibilityOf(popup_shopping_cart));
         Assert.assertEquals(cart_title.getText(), "Faded Short Sleeve T-shirts");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

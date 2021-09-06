@@ -83,16 +83,13 @@ public class LoginPage {
             private WebElement state;
 
 
-
     Random rand = new Random();
     int a = rand.nextInt(300)+1;
-
 
     public LoginPage(WebDriver driver) {
         this.driver=driver;
         wait = new WebDriverWait(driver,10);
     }
-
 
     public void open(){
 
@@ -103,7 +100,6 @@ public class LoginPage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(row));
     }
-
 
     public void fiilform(String email_form, String passwd_form){
 
@@ -125,6 +121,7 @@ public class LoginPage {
         email_create_field.sendKeys(customer_email);
         submit_button_create.click();
     }
+
     public void fill_fields(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("customer_firstname")));
         gender_checkbox.click();

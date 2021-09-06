@@ -27,16 +27,12 @@ public class GotoSignup extends WebDriverSettings{
         homepage.open();
         homepage.move_to_cart();
         homepage.continue_button.click();
-
         Actions action=new Actions(driver);
         action.moveToElement(homepage.shopping_cart).build().perform();
         Assert.assertEquals(homepage.cart_block_product_name.getText(),"Faded Shor...");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("button_order_cart")));
         homepage.checkout_button.click();
-
     }
-
-
 }
 
 
